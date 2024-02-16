@@ -1,4 +1,4 @@
+/* eslint-disable no-undef */
 import abi from './Transactions.json'
-
-export const contractAddress = '0xf85dBCA94CbfDEb00bF59C3F5d6f2CF531AE4477'
-export const contractABI = abi
+export const contractAddress = '0x85b26Ac3AE4DCD10fbAd15988e250E4259E8Bbe9'
+export const contractAbi = abi.abi

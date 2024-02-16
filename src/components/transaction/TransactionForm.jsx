@@ -2,7 +2,8 @@ import { CurrencyDollarIcon } from "@heroicons/react/outline";
 import { SwitchVerticalIcon } from "@heroicons/react/solid";
 import styles from "../../styles/Transaction.module.css";
 import { useContext } from "react";
-import { TransactionContext } from "../../context/TransactionContext";
+import { TransactionContext } from "../../context/context";
+import React from "react"
 
 function TransactionForm() {
   const {

@@ -1,8 +1,9 @@
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import styles from "../styles/Navbar.module.css";
-import { TransactionContext } from "../context/TransactionContext";
+import { TransactionContext } from "../context/context";
 import { useContext } from "react";
 import { shortenAddress } from "../utils/shortenAddress";
+import React from "react"
 
 const Navbar = () => {
   const { connectWallet, currentAccount } = useContext(TransactionContext);
@@ -11,11 +12,10 @@ const Navbar = () => {
     <nav className={styles.navigationContainer}>
       <div className={styles.container}>
         <div className={styles.logoContainer}>
-          <img
-            className={styles.logoImage}
-            src="/src/assets/venmo-logo.svg"
-            alt="Venmo Logo"
-          />
+          <h1 className={styles.logoImage}>
+            cryptoPay
+            
+            </h1>
         </div>
 
         {currentAccount ? (
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className={styles.avatarContainer}>
               <img
                 className={styles.avatarImage}
-                src="https://yeeqiang.me/avatar.jpeg"
+                src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png"
                 alt=""
               />
             </div>

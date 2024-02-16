@@ -2,16 +2,14 @@ import { ChatAltIcon, GlobeIcon, HeartIcon } from "@heroicons/react/outline";
 import { UserGroupIcon, UserIcon } from "@heroicons/react/solid";
 import styles from "../../styles/Activity.module.css";
 import { useContext } from "react";
-import { TransactionContext } from "../../context/TransactionContext";
+import { TransactionContext } from "../../context/context";
 import { shortenAddress } from "../../utils/shortenAddress";
-
+import React from "react"
 function ActivityCard() {
   const { transactions, currentAccount } = useContext(TransactionContext);
   const generateRandomAvatar = () => {
     const randomAvatar = Math.floor(Math.random() * 1000);
-    return `https://avatars.dicebear.com/api/adventurer/${
-      randomAvatar + currentAccount
-    }.svg`;
+    return "https://cdn-icons-png.flaticon.com/512/6596/6596121.png";
   };
 
   return (

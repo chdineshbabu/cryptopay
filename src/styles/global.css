@@ -1,6 +1,6 @@
 :root {
   --primary-color: #008cff;
-  --gray: #2f3033;
+  --gray: #ffffff;
 }
 
 /* Reset Styling */
@@ -67,6 +67,6 @@ html {
 }
 
 body {
-  color: black;
-  background-color: hsl(209deg 98% 94%);
+  color: rgb(255, 255, 255);
+  background-color: hsl(206, 12%, 12%);
 }

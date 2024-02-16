@@ -1,6 +1,6 @@
-export const shortenAddress = (address) => {
-  const firstPart = address.slice(0, 5);
-  const lastPart = address.slice(address.length - 4);
+export const shortenAddress = (address) =>{
+    const first = address.slice(0,5)
+    const last = address.slice(address.length - 4)
 
-  return `${firstPart}...${lastPart}`;
-};
+    return `${first}...${last}`
+}
